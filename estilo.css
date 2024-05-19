@@ -1,0 +1,159 @@
+:root {  /* Cores */
+    --cor1: #262626;
+    --cor2: #BF471B;
+    --cor3: #BF8969;
+    --cor4: #732C02;
+    --cor5: #011C40;
+    --cor6: #FFFFFF;
+    --cor7: #ED5821;
+    --cor8: #9C3916;
+    --cor9: #732A10;
+    --cor10: #4A1B0A;
+}
+
+.menu { /* Estilos do menu */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--cor2);
+    z-index: 1000;
+}
+
+.menu ul { /* Estilos da lista do menu */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu li { /* Estilos dos itens do menu */
+    margin: 0 10px;
+}
+
+.menu li a { /* Estilos dos links do menu */
+    display: block;
+    color: var(--cor5);
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: center;
+    transition-duration: 0.6s;
+    border-radius: 25px;
+}
+
+.menu li a:hover { /* Estilos dos links do menu ao passar o mouse */
+    background-color: var(--cor7);
+    color: var(--cor6);
+}
+
+html, body { /* Estilos das seções do corpo e da pagina */
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    height: 165vh;
+    background: linear-gradient(to bottom, var(--cor1) 30%, var(--cor8) 70%);
+}
+
+.imagem1, .imagem2, .imagem3, .imagem4 { /* Estilos das imagens */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+}
+
+.img1, .img2, .img3, .img4 { /* Estilos das imagens */
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.texto1, .texto2, .texto3, .texto4 { /* Estilos dos textos */
+    text-align: center; 
+    margin-top: -50px;
+    color: var(--cor6);
+}
+
+.texto2 ul, .texto3 ul {  /* Estilos das listas */
+    list-style-position: inside;
+    max-width: 950px;
+    margin: -15px auto 0;
+    padding: 0 20px;
+    text-align: justify;
+}
+
+.texto2 ul li a, .texto3 ul li a { /* Estilos dos links dentro das listas */
+    color: var(--cor7); 
+    text-decoration: none; 
+    text-shadow: 5px 5px 10px var(--cor1);
+}
+
+
+.paragrafo1, .paragrafo2, .paragrafo3, .paragrafo4 {
+    max-width: 950px;
+    margin: -15px auto 0;
+    padding: 0 20px;
+    text-align: justify;
+}
+
+.pag1, .pag2, .pag3, .pag4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    flex-direction: column;
+}
+
+.section { /* Estilos das seções */
+    margin-bottom: 150px; /* Adicionando margem inferior para criar espaço entre as seções */
+}
+
+
+#form-contato {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {  /* Estilos dos rótulos do formulário */
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"], /* Estilos dos campos de texto */
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea { 
+    resize: vertical;
+}
+
+button[type="submit"] { /* Estilos do botão de envio do formulário */
+    background-color: var(--cor2);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--cor7);
+}
+

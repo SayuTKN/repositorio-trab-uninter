@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu portfolio</title>
+    <link rel="stylesheet" href="estilo.css"> <!-- Links para as fontes -->
+</head>
+<body>
+    
+    <div class="menu">  <!-- Menu -->
+        <ul>
+            <li><a href="#pag1">Sobre mim</a></li>
+            <li><a href="#pag2">Formação</a></li>
+            <li><a href="#pag3">Portfólio</a></li>
+            <li><a href="#pag4">Contato</a></li>
+        </ul>
+    </div>
+
+    <section id="pag1" class="section">  <!-- Seções -->
+        <div class="imagem1">
+            <img class="img1" src="imagens/foto_portfolio.png" alt="Sayuri foto">
+        </div>
+        
+        <div class="texto1">
+            <h1>Sobre mim</h1>
+            <p class="paragrafo1">Me chamo Sayuri Takano, tenho 21 anos e estudo Análise e Desenvolvimento de Sistemas na Uninter. Também sou estagiária de Desenvolvimento de Software na Desosp. Minha paixão é o backend, mas estou me divertindo aprendendo mais sobre o frontend. <br>
+                Além da tecnologia, adoro animes, livros, filmes, séries e jogos, hobbies que dedico meu tempo livre. Também estou sempre buscando aprimorar minhas habilidades no violão e no ukulele, tocando principalmente músicas da Taylor Swift.
+            </p>
+        </div>
+    </section>
+
+    <section id="pag2" class="section">
+        <div class="imagem2">
+            <img class="img2" src="imagens/formacao.png" alt="formação academica">
+        </div>
+        <div class="texto2">
+            <h1>Formação</h1>
+            <ul>
+                <li>Técnológo em andamento de Análise e Desenvolvimento de Sistemas (com previsão de conclusão em 12/2024)</li>
+                <li>Curso JavaScript do Zero - <a href="imagens/certificado-trybe.png" target="_blank">Certificado Trybe</a></li>
+            </ul>
+                        <h2>Idiomas</h2>
+            <ul>
+                <li>Inglês Avançado - <a href="documentos/ingles-certificado.pdf" target="_blank">Certificado de Inglês</a></li>
+                <li>Português Fluente</li>
+                <!-- Adicione outros idiomas aqui -->
+            </ul>
+        </div>
+    </section>
+
+    <section id="pag3" class="section">
+        <div class="imagem3">
+            <img class="img3" src="imagens/icone_portfolio.png" alt="portfolio">
+        </div>
+        <div class="texto3">
+            <h1>Portfólio</h1>
+            <ul>
+                <li>Site para pesquisar e adicionar filmes em APEX usando SQL, PL/SQL e JavaScript - <a href="https://apex.oracle.com/pls/apex/r/sla_ords/filmes/home?session=115363639398979" target="_blank">Link</a></li>  
+                <li>Atividade em Java que emula um cofrinho de moedas - <a href="https://github.com/SayuTKN/Atividade-Java" target="_blank">Link</a></li>  
+                <li>Atividade em Python - <a href="https://github.com/SayuTKN/Atividade-python" target="_blank">Link</a></li>  
+            </ul>
+            </ul>
+    </section> 
+
+    <section id="pag4" class="section">
+        <div class="imagem4">
+            <img class="img4" src="imagens/contato.png" alt="contato">
+        </div>
+        <div class="texto4">
+            <h1>Contato</h1>
+            <form id="form-contato" action="#" method="POST">
+                <div class="form-group">
+                    <input type="text" id="nome" name="nome" placeholder="Nome" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="mensagem" name="mensagem" rows="4" placeholder="Mensagem" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
